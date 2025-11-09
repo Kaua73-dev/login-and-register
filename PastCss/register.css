@@ -1,0 +1,89 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #141E30, #243B55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container do formulário */
+form {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease forwards;
+}
+
+form h3 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 1.6em;
+  letter-spacing: 1px;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+}
+
+form input::placeholder {
+  color: #ddd;
+}
+
+form input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px #00bcd4;
+}
+
+/* Botão */
+form button {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00bcd4, #2196f3);
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
